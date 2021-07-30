@@ -8,4 +8,5 @@ services:
     ports:
       - 5001:5001
       - 4001:4001
-      - "${WEB_UI_PORT}:8080"
+      - 4001:4001/udp
+      - "${GATEWAY_PORT}:8080"
