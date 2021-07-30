@@ -6,6 +6,10 @@
 1. `vim .env`
 1. `docker-compose up -d`
 
+## WebUI
+
+<http://127.0.0.1:5001/webui>
+
 ## Reference
 
 - Run IPFS inside Docker IPFS Docs\
