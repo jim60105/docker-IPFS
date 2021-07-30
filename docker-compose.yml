@@ -1,0 +1,11 @@
+services:
+  ipfs:
+    image: ipfs/go-ipfs:latest
+    restart: unless-stopped
+    volumes:
+      - ${STAGING}:/export
+      - ${DATA}:/data/ipfs
+    ports:
+      - 5001:5001
+      - 4001:4001
+      - "${WEB_UI_PORT}:8080"
